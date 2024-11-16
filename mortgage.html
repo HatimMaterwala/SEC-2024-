@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House Mortgage Repayment Calculator</title>
+<link rel="stylesheet" href="mortgage.css">
+</head>
+<body>
+<div class="container">
+  <h1>House Mortgage Repayment Calculator</h1>
+  <label for="house-value">House Value (CAD):</label>
+  <input type="number" id="house-value" placeholder="Enter the house value">
+  <label for="interest-rate">Interest Rate (%):</label>
+  <input type="number" id="interest-rate" step="0.01" placeholder="Enter the interest rate">
+  <label for="fixed-monthly-payment">Fixed Monthly Payment (CAD):</label>
+  <input type="number" id="fixed-monthly-payment" placeholder="Enter the fixed monthly payment">
+  <button id="calculate-button">Calculate</button>
+  <div id="result"></div>
+</div>
+<script src="mortgage.js"></script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "JetBrains Mono", monospace;
+}
+
+body{
+    background-color:white !important;
+}
+
+.logo{
+    width: 50px;
+}
+
+.nav{
+
+    position: fixed;
+    top: 0;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 30px ;
+
+    font-weight: bolder;
+    background-color: #333333;
+
+    z-index: 100;
+
+}
+
+.homeNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.homeNavbar > button{
+    padding: 10px;
+    background: linear-gradient(135deg, #1E90FF, #40E0D0);;
+    border-radius: 1.5rem;
+    border: 1px solid black ;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+
+    font-weight: bolder;
+}
+
+.homeNavbar > button:hover{
+    transition: all;
+    transition-duration: 0.3s;
+    background-color: #14516f;
+    transform: scale(1.2);
+}
+
+.functions{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+.functions > button {
+    padding: 10px;
+    background: linear-gradient(135deg, #1E90FF, #40E0D0);
+    border-radius: 1.5rem;
+    border: 1px solid black ;
+    box-shadow: 2px 2px 5px black;
+
+    font-weight: bolder;
+}
+
+.functions > button:hover{
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    background-color: #14516f;
+    transform: scale(1.2);
+}
+
+.functions > button > a{
+    text-decoration: none;
+    color: white;
+    color: black;
+}
+
+.introMain{
+    width: 100%;
+    min-height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.introMain > h1{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.introMain > p{
+    width: 80%;
+}
+
+/* STOCKS */
+.stockMain{
+    padding: 0px 30px;
+}
+
+.stockContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stockContainer > h1{
+    font-size: 40px;
+}
+
+.stockMain {
+    display: flex;
+    margin-top: 20px;
+}
+
+.stockData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stb1, .stb2, .stb3, .stb4{
+    width: 200px;
+    background-color: rgb(229, 222, 222);
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    border-radius: 1.5rem;
+
+    gap: 10px;
+}
+
+.stb1:hover, .stb2:hover, .stb3:hover, .stb4:hover{
+    transition: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.05);
+}
+
+
+.stockButton > button{
+    margin-top: 40px;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #1E90FF, #40E0D0);
+    border-radius: 1.5rem;
+    border: 1px solid black ;
+    box-shadow: 2px 2px 5px black;
+
+    margin-bottom: 30px;
+}
+
+.stockButton > button:hover{
+    transition: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.05);
+}
+
+.stockButton > button > a {
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+
+/* Mortgage */
+
+.Mortgage{
+    padding: 0px 80px;
+}
+
+.mortgageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mortgageContainer > h1{
+    font-size: 40px;
+}
+
+.mortgageMain {
+    display: flex;
+    margin-top: 20px;
+}
+
+.mortgageData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+}
+
+.mb1, .mb2, .mb3, .mb4{
+    width: 200px;
+    background-color: rgb(229, 222, 222);
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    border-radius: 1.5rem;
+
+    gap: 10px;
+}
+
+.mb1:hover, .mb2:hover, .mb3:hover, .mb4:hover{
+    transition: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.05);
+}
+
+
+.mortgageButton > button{
+    margin-top: 40px;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #1E90FF, #40E0D0);
+    border-radius: 1.5rem;
+    border: 1px solid black ;
+    box-shadow: 2px 2px 5px black;
+
+    margin-bottom: 30px;
+}
+
+.mortgageButton > button:hover{
+    transition: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.05);
+}
+
+.mortgageButton > button > a {
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+
+/* Savings */
+
+.savingsContainer{
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.savingsContainer > h1{
+    font-size: 40px;
+}
+
+.savingsMain {
+    display: flex;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.savingsData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.sb1, .sb2, .sb3, .sb4{
+    /* width: 200px; */
+    background-color: rgb(229, 222, 222);
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    border-radius: 1.5rem;
+
+    gap: 10px;
+}
+
+.sb1:hover, .sb2:hover, .sb3:hover, .sb4:hover{
+    transition: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.05);
+}
+
+
+.savingsButton > button{
+    margin-top: 40px;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #1E90FF, #40E0D0);
+    border-radius: 1.5rem;
+    border: 1px solid black ;
+    box-shadow: 2px 2px 5px black;
+}
+
+.savingsButton > button:hover{
+    transition: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.05);
+}
+
+.savingsButton > button > a {
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+
+/* Expenditure */
+.expenditureContainer{
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.expenditureContainer > h1{
+    font-size: 40px;
+}
+
+.expenditureMain {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.expenditureData{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.eb1, .eb2, .eb3, .eb4{
+    width: 200px;
+    background-color: rgb(229, 222, 222);
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    border-radius: 1.5rem;
+
+    gap: 10px;
+}
+
+.eb1:hover, .eb2:hover, .eb3:hover, .eb4:hover{
+    transition: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.05);
+}
+
+
+.expenditureButton > button{
+    margin-top: 40px;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #1E90FF, #40E0D0);
+    border-radius: 1.5rem;
+    border: 1px solid black ;
+    box-shadow: 2px 2px 5px black;
+
+    margin-bottom: 30px;
+}
+
+
+.expenditureButton > button:hover{
+    transition: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+    transform: scale(1.05);
+}
+
+.expenditureButton > button > a {
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+
+
+.footer{
+
+    margin-top: 20px;
+    background-color: #333333;
+    padding: 40px;
+
+    text-align: center;
+}
+
+.footer > p{
+    color: white;
+    font-size: 1.2em;
+}
+
+
+
